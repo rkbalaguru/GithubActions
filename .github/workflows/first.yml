@@ -14,3 +14,7 @@ jobs:
         run: 
           node -v
           npm -v 
+      - name: example
+        run: |
+          pwd
+          ls

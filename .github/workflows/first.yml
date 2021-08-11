@@ -9,6 +9,6 @@ jobs:
     steps: 
       - name: dump
         run: |
-         echo @{{ contains('hello', 'll') }}
-         echo @{{ startwith('hello', 'hel') }}
-         echo @{{ endswith('hello', 'lo') }}
+         echo {{ contains('hello', 'll') }}
+         echo {{ startwith('hello', 'hel') }}
+         echo {{ endswith('hello', 'lo') }}

@@ -8,5 +8,5 @@ jobs:
       - name: dump
         run: |
          echo ${{ contains('hello', 'll') }}
-         echo ${{ startwith('hello', 'hel') }}
+         echo ${{ startswith('hello', 'hel') }}
          echo ${{ endswith('hello', 'lo') }}

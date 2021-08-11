@@ -4,10 +4,10 @@ name: Shell commands
 on: [push]
 
 jobs:
-  function: 
+  functions: 
     runs-on: ubuntu-latest
     steps: 
-      - name: dummp
+      - name: dump
         run: |
          echo @{{ contains('hello', 'll') }}
          echo @{{ startwith('hello', 'hel') }}

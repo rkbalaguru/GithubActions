@@ -1,14 +1,12 @@
 
 name: Shell commands
-
-on: [push]
-
+on: push
 jobs:
   functions: 
     runs-on: ubuntu-latest
     steps: 
       - name: dump
         run: |
-         echo {{ contains('hello', 'll') }}
-         echo {{ startwith('hello', 'hel') }}
-         echo {{ endswith('hello', 'lo') }}
+         echo ${{ contains('hello', 'll') }}
+         echo ${{ startwith('hello', 'hel') }}
+         echo ${{ endswith('hello', 'lo') }}

@@ -1,0 +1,14 @@
+name: change version
+on: push
+
+jobs:
+  node-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: current version
+        run: node -v
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: current version
+        run: node -v

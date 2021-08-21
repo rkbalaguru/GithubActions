@@ -1,5 +1,5 @@
 
-name: Shell commands
+name: Shell commands to run
 on: push
 jobs:
   functions: 

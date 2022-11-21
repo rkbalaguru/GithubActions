@@ -5,7 +5,7 @@ jobs:
   node-version:
     runs-on: ubuntu-latest
     steps:
-      - name: current version
+      - name: current version123
         run: node -v
       - uses: actions/setup-node@v2
         with:

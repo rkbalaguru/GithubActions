@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: current version123
         run: node -v
-      - name: Checkout private tools
+      - name: Checkout private tool
         uses: actions/checkout@v3
 
       - name: Setup
@@ -19,6 +19,6 @@ jobs:
         with:
           node-version: 12
           token: ${{ secrets.GH_PAT }}
-          
+
       - name: current version
         run: node -v

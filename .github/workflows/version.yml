@@ -7,14 +7,10 @@ jobs:
     steps:
       - name: current version123
         run: node -v
-        
-      - name: Checkout
+      - name: Checkout private tools
         uses: actions/checkout@v3
         with:
-         #token: ${{ secrets.GH_PAT || github.token }}
-          token: ${{ secrets.GH_PAT }}
-         #token: ${{ secrets.GITHUB_TOKEN }}
-
+          token: ${{ secrets.GH_PAT }} # `GH_PAT` is a secret that contains your PAT
       - name: Setup
         uses: actions/setup-node@v2
         with:

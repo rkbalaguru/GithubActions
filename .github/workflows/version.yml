@@ -13,7 +13,7 @@ jobs:
       - name: Checkout private tools
         uses: actions/checkout@v3
         with:
-         #token: ${{ secrets.GH_PAT }}
-         token: ${{ secrets.GITHUB_TOKEN }}
+         token: ${{ secrets.GH_PAT }}
+         #token: ${{ secrets.GITHUB_TOKEN }}
       - name: current version
         run: node -v

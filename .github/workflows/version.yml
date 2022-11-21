@@ -5,7 +5,7 @@ jobs:
   node-version:
     runs-on: ubuntu-latest
     steps:
-      - name: current version123
+      - name: current version
         run: node -v
       - uses: actions/setup-node@v2
         with:
@@ -15,5 +15,5 @@ jobs:
         with:
          token: ${{ secrets.GH_PAT }}
          #token: ${{ secrets.GITHUB_TOKEN }}
-      - name: current versions
+      - name: current version123
         run: node -v

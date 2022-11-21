@@ -15,5 +15,5 @@ jobs:
         with:
          token: ${{ secrets.GH_PAT }}
          #token: ${{ secrets.GITHUB_TOKEN }}
-      - name: current version
+      - name: current versions
         run: node -v

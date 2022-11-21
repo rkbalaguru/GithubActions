@@ -9,4 +9,4 @@ jobs:
         run: |
          echo ${{ contains('hello', 'll') }}
          echo ${{ startswith('hello', 'hel') }}
-         echo ${{ endswith('hello', 'lo') }}
+         echo ${{ endswith('hello', 'hlo') }}

@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-         token: ${{ secrets.GH_PAT }}
+         token: ${{ secrets.GH_PAT || github.token }}
          #token: ${{ secrets.GITHUB_TOKEN }}
       - name: current version
         run: node -v

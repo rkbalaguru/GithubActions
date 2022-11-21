@@ -10,6 +10,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 12
+          token: ${{ secrets.GH_PAT }}
       - name: Checkout
         uses: actions/checkout@v3
         with:

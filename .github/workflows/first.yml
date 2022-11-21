@@ -5,8 +5,8 @@ jobs:
   functions: 
     runs-on: ubuntu-latest
     steps: 
-      - name: dump
+      - name: dump123
         run: |
          echo ${{ contains('hello', 'll') }}
-         echo ${{ startswith('hello', 'l') }}
+         echo ${{ startswith('hello', 'hel') }}
          echo ${{ endswith('hello', 'lo') }}
